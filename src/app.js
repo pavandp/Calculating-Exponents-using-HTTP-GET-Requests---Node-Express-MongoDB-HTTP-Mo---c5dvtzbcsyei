@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
       }
       else {
         res.writeHead(200, {'Content-Type': 'text/plain'})
-        res.end(Math.pow(value1, value2));
+        res.end('The result is ', Math.pow(value1, value2));
       }
     });
     }
